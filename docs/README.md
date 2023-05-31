@@ -1,2 +1,2 @@
-*Author: Victoria Borsetti
-Term: Summer 2023
+- **Author:** Victoria Borsetti
+- **Term:** Summer 2023
