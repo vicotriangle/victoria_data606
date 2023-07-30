@@ -2,6 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
+import pickle
 
 st.title('AirBnB Price Predictor')
 st.markdown('Determine if you are charging the right amount for your AirBnB.')
