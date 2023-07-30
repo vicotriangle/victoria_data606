@@ -22,7 +22,7 @@ def predict(room_type, host_is_superhost): #, accommodates, bedrooms, new_bathro
 
 
 
-    prediction = room_type*37.65+host_is_superhost*11.85+bedrooms*17.21#+review_scores_rating*13.07+accommodates*11.10+new_bathroom*7.87
+    prediction = room_type*37.65+host_is_superhost*11.85#+bedrooms*17.21+review_scores_rating*13.07+accommodates*11.10+new_bathroom*7.87
     return prediction
     
 
