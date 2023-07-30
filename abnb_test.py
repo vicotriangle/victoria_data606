@@ -15,7 +15,7 @@ st.header('Enter the characteristics of your AirBnB:')
 
 
 room_type = st.selectbox("Room Type: ",
-                     ['Hotel room', 'Entire home/apt' ,'Private room','Shared room'])
+                     ['Entire home/apt', 'Private room','Shared room','Hotel room'])
 host_is_superhost = st.radio("Are you a Superhost?: ", ('No', 'Yes'))
 accommodates = st.number_input("Enter max of occupancy: ", step=1)
 bedrooms = st.number_input("Enter number of bedrooms: ", step=1)
