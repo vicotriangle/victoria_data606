@@ -25,7 +25,7 @@ def predict(room_type, host_is_superhost): #, accommodates, bedrooms, new_bathro
     
 
 
-st.title('AirBnB Price Predictor')
+st.title('AirBnB Price Predictoraaa')
 st.markdown('Determine if you are charging the right amount for your AirBnB.')
 st.header('Enter the characteristics of your AirBnB:')
 
