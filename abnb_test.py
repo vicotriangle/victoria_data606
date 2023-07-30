@@ -10,10 +10,6 @@ st.markdown('Determine if you are charging the right amount for your AirBnB.')
 st.header('Enter the characteristics of your AirBnB:')
 
 
-#model = ltb.LGBMRegressor()
-#model.load_model('lgbm_model.json')
-
-
 room_type = st.selectbox("Room Type: ",
                      ['Entire home/apt', 'Private room','Shared room','Hotel room'])
 host_is_superhost = st.radio("Are you a Superhost?: ", ('No', 'Yes'))
