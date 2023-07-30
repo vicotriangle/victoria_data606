@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -20,12 +21,13 @@ def predict(room_type, host_is_superhost): #, accommodates, bedrooms, new_bathro
         host_is_superhost = 1
 
 
-    prediction = room_type*37.65+host_is_superhost*11.85#+bedrooms*17.21+review_scores_rating*13.07+accommodates*11.10+new_bathroom*7.87
+
+    prediction = room_type*37.65+host_is_superhost*11.85+bedrooms*17.21#+review_scores_rating*13.07+accommodates*11.10+new_bathroom*7.87
     return prediction
     
 
 
-st.title('AirBnB Price Predictoraaa')
+st.title('AirBnB Price Predictor')
 st.markdown('Determine if you are charging the right amount for your AirBnB.')
 st.header('Enter the characteristics of your AirBnB:')
 
@@ -41,4 +43,4 @@ Neighbourhood_group_cleansed = bedrooms = st.selectbox("Select Borough: ", ['Man
 
 if st.button('Predict Price'):
     price = predict(room_type, host_is_superhost)
-    st.success(f'The predicted price of the AirBnB is ${price:.2f} USD')
+    st.success(f'The market price of the AirBnB is ${price:.2f} USD')
