@@ -9,7 +9,6 @@ The data being used for this project are details on AirBnb listings in New York 
 Overall, if I were to invest in an Airbnb in New York, what parameters should I look for in a real estate listing, how should I write a descriptions to maximize my chances of a successful and profitable Airbnb?
 The process of understanding successful Airbnbs will include the following:
 1. Use machine learning to predict price based on several parameters from the listings. The plan is to use decision trees, linear regression, and k-means to understand which parameters are most important to a successful bnb.
-2. Use NLP on description of listing and reviews predict ratings - what key words get the best ratings. NLP packages and translation packages will be required to parse through descriptions and reviews to see if key words make a difference in how highly a listing is rated.
 
 ## Data Source
 This data comes from Kaggle at the link: https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv.
