@@ -50,7 +50,7 @@ def predict(room_type, host_is_superhost, accommodates, bedrooms, new_bathroom, 
     prediction = room_type*27.86+host_is_superhost*11.85+accommodates*11.10+bedrooms*17.21+new_bathroom*7.87+review_scores_rating*13.07+bor_coeff+TV_CE+Kit_CE+Wash_CE
     return prediction
     
-st.title('AirBnB Nightly Price Analyzer')
+st.title('AirBnB Daily Price Analyzer')
 st.markdown('Determine if you are charging the right amount for your AirBnB.')
 st.header('Enter the characteristics of your AirBnB:')
 
