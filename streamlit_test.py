@@ -51,7 +51,7 @@ def predict(room_type, host_is_superhost, accommodates, bedrooms, new_bathroom, 
     return prediction
     
 st.title('Airbnb Daily Price Analyzer')
-st.markdown('Determine if you are charging the right amount for your AirBnB.')
+st.markdown('Determine if you are charging the right amount for your Airbnb.')
 st.subheader('Enter the characteristics of your Airbnb:')
 
 col1, col2 = st.columns(2)
