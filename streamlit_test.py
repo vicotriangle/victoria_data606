@@ -54,17 +54,20 @@ st.title('AirBnB Daily Price Analyzer')
 st.markdown('Determine if you are charging the right amount for your AirBnB.')
 st.header('Enter the characteristics of your AirBnB:')
 
-room_type = st.selectbox("Room Type: ", ['Entire home/apt', 'Private room','Shared room','Hotel room'])
-host_is_superhost = st.radio("Are you a Superhost?: ", ('No', 'Yes'))
-accommodates = st.number_input("Enter max of occupancy: ", step=1,value=1, min_value=1, max_value=10)
-bedrooms = st.number_input("Enter number of bedrooms: ", step=1,value=0, min_value=0, max_value=6)
-new_bathroom = st.number_input("Enter number of bathrooms: ", step=1,value=1, min_value=1, max_value=4)
-review_scores_rating = st.number_input("Enter current AirBnB rating: ")
-amenities = st.multiselect("Amenities: ", ['TV', 'Kitchen', 'Washer'])
-Neighbourhood_group_cleansed = st.selectbox("Select Borough: ", ['Manhattan','Queens', 'Brooklyn' ,'Bronx'])
+col1, col2 = st.columns(2)
 
+with col1:
+    Neighbourhood_group_cleansed = st.selectbox("Select Borough: ", ['Manhattan','Queens', 'Brooklyn' ,'Bronx'])
+    room_type = st.selectbox("Room Type: ", ['Entire home/apt', 'Private room','Shared room','Hotel room'])
+    review_scores_rating = st.number_input("Enter current Airbnb rating: ")
+    host_is_superhost = st.radio("Are you a Superhost?: ", ('No', 'Yes'),horizontal=True)
+
+with col2:
+    accommodates = st.number_input("Enter max occupancy: ", step=1,value=1, min_value=1, max_value=10)
+    bedrooms = st.number_input("Enter number of bedrooms: ", step=1,value=0, min_value=0, max_value=6)
+    new_bathroom = st.number_input("Enter number of bathrooms: ", step=1,value=1, min_value=1, max_value=4)
+    amenities = st.multiselect("Amenities: ", ['TV', 'Kitchen', 'Washer'])
 
 if st.button('Predict Price'):
     price = predict(room_type, host_is_superhost, accommodates, bedrooms, new_bathroom, review_scores_rating)
     st.success(f'The market price of the AirBnB is ${price:.2f} USD')
-
