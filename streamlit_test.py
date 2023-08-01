@@ -50,9 +50,9 @@ def predict(room_type, host_is_superhost, accommodates, bedrooms, new_bathroom, 
     prediction = room_type*27.86+host_is_superhost*11.85+accommodates*11.10+bedrooms*17.21+new_bathroom*7.87+review_scores_rating*13.07+bor_coeff+TV_CE+Kit_CE+Wash_CE
     return prediction
     
-st.title('AirBnB Daily Price Analyzer')
+st.title('Airbnb Daily Price Analyzer')
 st.markdown('Determine if you are charging the right amount for your AirBnB.')
-st.header('Enter the characteristics of your AirBnB:')
+st.subheader('Enter the characteristics of your Airbnb:')
 
 col1, col2 = st.columns(2)
 
@@ -68,6 +68,7 @@ with col2:
     new_bathroom = st.number_input("Enter number of bathrooms: ", step=1,value=1, min_value=1, max_value=4)
     amenities = st.multiselect("Amenities: ", ['TV', 'Kitchen', 'Washer'])
 
-if st.button('Predict Price'):
+if st.button('Analyze Price'):
     price = predict(room_type, host_is_superhost, accommodates, bedrooms, new_bathroom, review_scores_rating)
-    st.success(f'The market price of the AirBnB is ${price:.2f} USD')
+    st.success(f'The market price of your Airbnb is ${price:.2f} USD')
+
