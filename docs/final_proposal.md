@@ -2,6 +2,8 @@ Victoria Borsetti
 
 August 1, 2023
 
+https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx
+
 ### Description:
 This analysis will use Airbnb data from New York City to determine what aspects of a bnb listing contribute most to their price.
 
