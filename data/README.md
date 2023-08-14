@@ -1,9 +1,15 @@
-## Two options for importing Airbnb and subway station location data:
-1. Import from my personal Google Drive using code given below
-2. Import from the original sources (Kaggle and NY.gov) given below
+# Sources
+This project utilizes two raw data sources from the web. The primary source is NYC Airbnb data from Kaggle. The supplemental source is subway station locations offered by NY.gov. To view this data and its source website, follow the links below in step ONE. To import the data into a python notebook, use the Google Drive codes in step TWO.
+
+## Two options for viewing Airbnb and subway station location data:
+1. View/download from original sources:
+  - NYC Airbnb data from Kaggle: https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv
+      -- Metadata: https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596
+  - Subway station location data from NY.gov: https://data.ny.gov/widgets/i9wp-a4ja
+2. Import from my personal Google Drive using code given below
 
 
-Use the Jupyter Notebook code to download and read in data from a personal Google Drive using this code:
+### Airbnb Data:
 url = 'https://drive.google.com/file/d/1YU91bN5I9mIj75if3T12dVWbxNco95Wd/view?usp=drive_link'
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2] #reformat
 
@@ -34,5 +40,13 @@ abnb0 = pd.read_csv(path, dtype={"listing_url": "string","scrape_id": "float","l
                     "calculated_host_listings_count_private_rooms": "float",
                     "calculated_host_listings_count_shared_rooms": "float","reviews_per_month": "float"})
 
-Or, data can be retrieved from Kaggle here: https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv
+
+### Stations data:
+url = 'https://drive.google.com/file/d/1AJAmcOmbzt5vHyaMltmw9GmIPZGx2lhq/view?usp=drive_link'
+path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
+
+#define a dataframe called stations containing ONLY longitude and latitude of all stations data.
+stations = pd.read_csv(path, usecols = ['Entrance Latitude','Entrance Longitude'])
+stations.columns = ['slat','slon']
+stations.drop_duplicates(inplace=True) #remove duplicate stations (different entrances for same station)
 
