@@ -14,6 +14,7 @@ url = 'https://drive.google.com/file/d/1YU91bN5I9mIj75if3T12dVWbxNco95Wd/view?us
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2] #reformat
 
 #define a dataframe called abnb0 containing all listing data. Specify the datatypes.
+
 abnb0 = pd.read_csv(path, dtype={"listing_url": "string","scrape_id": "float","last_scraped": "string","name": "string",
                     "description": "string","neighborhood_overview": "string","picture_url": "string",
                     "host_id": "float","host_url": "string","host_name": "string","host_since": "string",
@@ -46,6 +47,7 @@ url = 'https://drive.google.com/file/d/1AJAmcOmbzt5vHyaMltmw9GmIPZGx2lhq/view?us
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
 
 #define a dataframe called stations containing ONLY longitude and latitude of all stations data.
+
 stations = pd.read_csv(path, usecols = ['Entrance Latitude','Entrance Longitude'])
 stations.columns = ['slat','slon']
 stations.drop_duplicates(inplace=True) #remove duplicate stations (different entrances for same station)
