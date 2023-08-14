@@ -10,7 +10,7 @@ This project utilizes two raw data sources from the web. The primary source is N
 
 
 ### Airbnb Data:
-url = 'https://drive.google.com/file/d/1YU91bN5I9mIj75if3T12dVWbxNco95Wd/view?usp=drive_link'
+url = 'https://drive.google.com/file/d/1YU91bN5I9mIj75if3T12dVWbxNco95Wd/view?usp=drive_link' \
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2] #reformat
 
 #define a dataframe called abnb0 containing all listing data. Specify the datatypes.
