@@ -43,7 +43,7 @@ abnb0 = pd.read_csv(path, dtype={"listing_url": "string","scrape_id": "float","l
 
 
 ### Stations data:
-url = 'https://drive.google.com/file/d/1AJAmcOmbzt5vHyaMltmw9GmIPZGx2lhq/view?usp=drive_link'
+url = 'https://drive.google.com/file/d/1AJAmcOmbzt5vHyaMltmw9GmIPZGx2lhq/view?usp=drive_link' \
 path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
 
 #define a dataframe called stations containing ONLY longitude and latitude of all stations data.
