@@ -1,3 +1,7 @@
+# Using Machine Learning to Analyze Airbnb Prices
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/23d0e402-754e-44b9-904f-ad3b49cdda93)
+
+
 - **Author:** Victoria Borsetti
 - **Term:** Summer 2023
 
