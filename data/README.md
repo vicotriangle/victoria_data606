@@ -48,7 +48,7 @@ path = 'https://drive.google.com/uc?export=download&id='+url.split('/')[-2]
 
 #define a dataframe called stations containing ONLY longitude and latitude of all stations data.
 
-stations = pd.read_csv(path, usecols = ['Entrance Latitude','Entrance Longitude'])
-stations.columns = ['slat','slon']
+stations = pd.read_csv(path, usecols = ['Entrance Latitude','Entrance Longitude']) \
+stations.columns = ['slat','slon'] \
 stations.drop_duplicates(inplace=True) #remove duplicate stations (different entrances for same station)
 
