@@ -7,20 +7,22 @@
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/acff7126-38cb-4d52-b7af-68f4a96e62e7)
 
 ## Overview
+Real Estate and travel are passions of mine. I frequently use accommodation services such as AirBnb, VRBO, Zillow, Realtor.com, etc. to explore, visit, and book properties all around the world. Currently, for Airbnb investors, it is difficult to perceive market fluctuations and monitor the supply and demand of accommodation options to ensure a competitive, yet profitable daily cost. There is no direct way to analyze comparable homes, understand what attributes of the Airbnb demand a higher rate, or identify issues in the listing that are affecting bookings. The impact of this is profit loss on homes priced too low, low booking rates on homes priced too high, and poor investment management due to the "black-box" nature of Airbnb cost setting.
+
+An intriguing thought is that there could be a recipe that hosts of Airbnbs can follow, or a pattern of attributes about properties, amenities, and overall experience that can help determine an appropriate daily cost for their Airbnb. This project attempts the following:
+1. Use machine learning to understand what attributes of an Airbnb contribute most to its price.
+2. Create a webapp where an investor could input key information of their listing, and using a machine learning model, could calculate the Airbnb's cost.
+
+The data being used for this project are details on AirBnb listings in New York City. Success will be measured using RMSE on the machine learning models. Attributes include NYC neighborhood, property type, room type, ratings, number of beds, number of bedrooms, number of baths, and amenities.
+This analysis will use Airbnb data from New York City to determine what aspects of a bnb listing contribute most to their price.
+
 
 ### Purpose
 
 ### Data Sources
 
 ### Description:
-This analysis will use Airbnb data from New York City to determine what aspects of a bnb listing contribute most to their price.
 
-Overall, if I owned an Airbnb in NYC, what are the features that would help me set an accurate cost and how much?
-The process of understanding Airbnb prices will include the following:
-1. Clean the data.
-2. Use machine learning to predict price based on several parameters from the listings. The plan is to use linear regression, polynomial regression, and LazyPredict (to find the best model) to understand which parameters are most important to a bnb's price.
-3. Add in data for locations of subway stations to see if "convenience" contributes to a better model.
-4. Re-analyze models for best fit.
 
 ### Source:
 1. Airbnb data comes from Kaggle at the link: https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv  
