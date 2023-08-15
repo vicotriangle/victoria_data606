@@ -16,14 +16,19 @@ An intriguing thought is that there is likely a recipe that can help determine a
 1. Use machine learning to understand what attributes of an Airbnb contribute most to its price.
 2. Create a webapp where an investor could input key information of their listing, and using a machine learning model, could calculate the market cost of their Airbnb.
 
+### Method
+Python will be used for data analysis and machine learning through Google Colab. All code, documents, and presentations will be published to Github: https://github.com/vicotriangle/victoria_data606/blob/main/
+
+Streamlit will be used to create the user interface for the webapp, VSCode for editing, and GitHub for deployment source.
+
 ### Data Sources
-The data being used for this project are details of Airbnb listings in New York City that are scraped from the site by a third-party source. Success will be measured using RMSE on the machine learning models. Attributes include NYC neighborhood, property type, room type, ratings, number of beds, number of bedrooms, number of baths, and amenities.
+The data being used for this project are details of Airbnb listings in New York City that are scraped from the site by a third-party. Attributes include NYC neighborhood, property type, room type, ratings, number of beds, number of bedrooms, number of baths, and amenities.
 This analysis will use Airbnb data from New York City to determine what aspects of a bnb listing contribute most to their price.
 
 1. Airbnb data comes from Kaggle at the link: https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv  
 Column descriptions can be found at the link: https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596
 
-The file from Kaggle is 88MB and includes 37k Airbnb listings from New York City downloaded in June of 2022. It contains 74 fields of information including important fields such as text fields (name, description, list of amenities, about the host, bathroom text), images (main picture of lisitng, host thumbnail), categorical (city, neighborhood, type of property, whether the listing is instant bookable), and numerical (listing ID, price, host response rate, latitude, longitude, number of beds, number of bedrooms, number of reviews, average review).
+The file from Kaggle is 88MB and includes 37k Airbnb listings from New York City downloaded in June of 2022. It contains 74 fields of information including important fields such as text fields (name, description, list of amenities, about the host, bathroom text), images (main picture of listing, host thumbnail), categorical (city, neighborhood, type of property, whether the listing is instant bookable), and numerical (listing ID, price, host response rate, latitude, longitude, number of beds, number of bedrooms, number of reviews, average review).
 
 2. Additional Sources used include NYC subway station location data found on New York City MTA site. This data can be found here:https://data.ny.gov/widgets/i9wp-a4ja
 
