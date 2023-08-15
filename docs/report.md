@@ -7,24 +7,19 @@
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/acff7126-38cb-4d52-b7af-68f4a96e62e7)
 
 ## Overview
+
+### Background
 Real Estate and travel are passions of mine. I frequently use accommodation services such as AirBnb, VRBO, Zillow, Realtor.com, etc. to explore, visit, and book properties all around the world. Currently, for Airbnb investors, it is difficult to perceive market fluctuations and monitor the supply and demand of accommodation options to ensure a competitive, yet profitable daily cost. There is no direct way to analyze comparable homes, understand what attributes of the Airbnb demand a higher rate, or identify issues in the listing that are affecting bookings. The impact of this is profit loss on homes priced too low, low booking rates on homes priced too high, and poor investment management due to the "black-box" nature of Airbnb cost setting.
 
-An intriguing thought is that there could be a recipe that hosts of Airbnbs can follow, or a pattern of attributes about properties, amenities, and overall experience that can help determine an appropriate daily cost for their Airbnb. This project attempts the following:
-1. Use machine learning to understand what attributes of an Airbnb contribute most to its price.
-2. Create a webapp where an investor could input key information of their listing, and using a machine learning model, could calculate the Airbnb's cost.
-
-The data being used for this project are details on AirBnb listings in New York City. Success will be measured using RMSE on the machine learning models. Attributes include NYC neighborhood, property type, room type, ratings, number of beds, number of bedrooms, number of baths, and amenities.
-This analysis will use Airbnb data from New York City to determine what aspects of a bnb listing contribute most to their price.
-
-
 ### Purpose
+An intriguing thought is that there is likely a recipe that can help determine an appropriate daily cost for an Airbnb based on typical property features, location, amenities, and overall experience ratings. This project attempts the following:
+1. Use machine learning to understand what attributes of an Airbnb contribute most to its price.
+2. Create a webapp where an investor could input key information of their listing, and using a machine learning model, could calculate the market cost of their Airbnb.
 
 ### Data Sources
+The data being used for this project are details of Airbnb listings in New York City that are scraped from the site by a third-party source. Success will be measured using RMSE on the machine learning models. Attributes include NYC neighborhood, property type, room type, ratings, number of beds, number of bedrooms, number of baths, and amenities.
+This analysis will use Airbnb data from New York City to determine what aspects of a bnb listing contribute most to their price.
 
-### Description:
-
-
-### Source:
 1. Airbnb data comes from Kaggle at the link: https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv  
 Column descriptions can be found at the link: https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596
 
