@@ -28,7 +28,7 @@
 
 [**Conclusion**](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
   - [Interpretation of Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#interpretation-of-results)
-  - [Lessons Learned](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#lessons-learned)
+  - [Learnings](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#learnings)
   - [Future Research](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#future-research)
 
 
@@ -377,7 +377,7 @@ The web application was built using [StreamLit](https://victoriadata606-nbrfse7x
 ## Conclusion
 
 ### Interpretation of Results
-The final features revealed some interesting discoveries about Airbnb pricing and highlighted areas to be further researched (see [Future Research](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#future-research) section below). This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is.
+The final features revealed some interesting discoveries about Airbnb pricing and highlighted areas to be further researched (see [Future Research](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#future-research) section below). Number of reviews in the last 12 months (1) is the most important feature for predicting price. It marries quantity *and* quality of reviews, as a guest who views the listing after it has received high praise, are more likely to book that bnb and in turn leave another high review (this assumes that all or most guests leave a review). It is somewhat related to the availability in the next 30 days (6) feature. These are the only features that give an indication of how often a bnb is booked. If a bnb is booked more often, likely it is highly rated and priced more accurately for its value than listings that are not booked as often. Number of bedrooms (2), number of people the bnb accommodates (3), and number of bathrooms (7) are not as surprising. These are typical property attributes that can indicate size and luxury of the Airbnb. The bigger the size, the higher the price. Location rating (4) is curiously high in importance which points to convenience being an important factor in how expensive an Airbnb is. For Airbnbs in New York City, a primarily walking and public transportation city, location is key. Room type (5) is another expected contributor to price. If the entire apartment is offered, it will be more desirable than a private room which will be more desirable than a shared room. Location in terms of the borough the property is located in is also a high contributor. Because location is a one-hot encoded feature, the interpretation is a bnb price changes by the dollar amount of the coefficient. In other words, a Manhattan (8) bnb is associated with a $32.44 increase in price according to the linear regression model. Similarly, if it's in Queens (13) or the Bronx (14), it is associated with a *decrease* in price of $19.14 and $28.42 respectively. As for amenities, having a washer was most
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/c1811b65-0479-485e-b804-5c3c1c1fb7ca)
 
@@ -387,7 +387,8 @@ Throughout the process of refining the final dataset and features, the three mac
 
 For the StreamLit app, accuracy is at 57.69. Although it is quite a bit less accurate, the tool must sacrifice some of it's performance for user-friendliness. If the tool requests information that is not intuitive or easy accessible to the Airbnb host, usability is reduced and the tool is not providing the service as intended. These more nuanced data points include the number of reviews the listing received in the last 12 months, the review rating of location, and the availablility in the next 30 days. Easier information to produce is borough the Airbnb is located in, typical listing data, and amentities it offers. The tool was a success based on easy of use, user-friendliness, style, and output.
 
-### Lessons Learned
+### Learnings
+
 
 ### Future Research
 
