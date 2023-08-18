@@ -8,13 +8,17 @@
 This repository contains all files used to create a webapp that analyzes Airbnb prices using machine learning.
 
 **requirements.txt** - Text file used for StreamLit. This file contains all packaged that need to be imported into the StreamLit application. StreamLit will not work unless this file exists.
+
 **streamlit_test.py** - Python file for StreamLit. This file contains code for the development of the StreamLit application. StreamLit will not work unless this file exists.
+
 **data** - README file with all source data links, descriptions, and code to import.
+
 **docs** - All documents for project preparation and finalization.
   - **capstone.pptx** - PowerPoint presentation of the final project.
   - **draft_proposal.md** - Initial proposal for this project including purpose and goals.
   - **final_proposal.md** - Final proposal for this project including purpose and goals.
   - **report.md** - Final report summarizing objectives, procedures, results, and learnings for this project.
+  - 
 **src** - All python notebook source code files used to execute this project.
   - **PreliminaryEDA.ipynb** - Python notebook used to validate the usability of the dataset. It includes data analysis of nulls, outliers, and data quality issues. It also contains various visualizations of the data helpful for analysis and understanding.
   - **ModelDevelopment.ipynb** - Python notebook that contains all data cleansing and machine learning procedures for the Airbnb dataset.
