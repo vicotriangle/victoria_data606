@@ -20,8 +20,8 @@ Perhaps there is a recipe that can determine an appropriate daily cost for an Ai
 #### Primary Data
 The data being used for this project are details of Airbnb listings in New York City that were scraped from the site by a third-party.
 
-  - Airbnb data comes from Kaggle at the link: https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv
-  - Column descriptions can be found at the link: https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596
+  - Airbnb data comes from Kaggle at the link: [Kaggle](https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv)
+  - Column descriptions can be found at the link: [Descriptions](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596)
 
 The file from Kaggle is 88MB and includes 37k Airbnb listings from New York City downloaded in June of 2022. It contains 74 fields of information. The full list and description of the fields are as follows:
 
@@ -342,9 +342,7 @@ With these features, the importance of each changes from the original regression
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/57772a6c-a902-4b33-9d97-327cc9234be2)
 
-The StreamLit application is accessible at the link: https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/
-
-The user interface looks like this. It allows the user to enter the details of the Airbnb and calculate a daily price.
+The StreamLit application is accessible at the link: https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/. The user interface looks like this. It allows the user to enter the details of the Airbnb and calculate a daily price.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/376bde96-d4a4-46ed-815b-df6d1acb8d69)
 
@@ -352,7 +350,9 @@ The user interface looks like this. It allows the user to enter the details of t
 ## Conclusion
 
 ### Results
-The final features revealed some interesting discoveries about Airbnb pricing and highlighted areas to be further researched (see future research section below). This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is.
+The final features revealed some interesting discoveries about Airbnb pricing and highlighted areas to be further researched (see future research section below). 
+
+This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is.
 
 Throughout the process of refining the final dataset and features, the three machine learning models were analyzed to assess the impact of each change. To optimize the model, there must be a balance between enough features that do not correlate with eachother to produce a reasonable accuracy, and minimizing the feature count to have good performance of the model and limited information that would need to be collected from an investor using the tool. If the change improved the model, it was kept. If it worsened the model without minimizing features or rectifying multi-collinearity, it was not included. The table below shows the RMSE of each regression model at each phase of the execution. At every step, the LGBM regression model out-performs the polynomial regression model which out-performs the linear regression model. After step 1, accuracy decreased by about $6 because of the removal of highly correlated features. However, the feature count went from 30 to 11, which is a desirable trade-off. Likewise, feature selection at step 4 reduced features from 21 to 13 to remove fields that did not contribute to the model significantly. At the final step, accessibility improved the model minimally, but reduced error to under $50 per day, which is a respectable result for the first version of this project.
 
