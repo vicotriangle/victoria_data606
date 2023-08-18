@@ -268,7 +268,7 @@ In order to use a machine learning model, all columns have to be numerical. Ther
 3. Host_is_superhost was encoded based on desirability of the value because there is a meaningful hierarchy. By doing this, the machine learning algorithm can take into account the ordinality of the field.
    - True = 1
    - False = 0
-4. Borough was one-hot encoded because there is no ordinality of the values, yet there is a low quanity of unique options. This added 4 new fields to the dataset, one for each borough. If the Airbnb is in that borough, the corresponding column will be "1" and "0" if not. This approach returned better results than using label encoding.
+4. Borough was one-hot encoded because there is no ordinality of the values, yet there is a low quantity of unique options. This added 4 new fields to the dataset, one for each borough. If the Airbnb is in that borough, the corresponding column will be "1" and "0" if not. This approach returned better results than using label encoding.
 5. Neighborhood was label encoded using sklearn to a random number from 0 to the number of unique values present. Because there is no ordinality and a high quantity of unique options, this was the best choice for this field.
 6. Property_type was label encoded using sklearn to a random number from 0 to the number of unique values present. Because there is no ordinality and a high quantity of unique options, this was the best choice for this field.
 
