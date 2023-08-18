@@ -25,6 +25,7 @@
     - [Lazy Predict](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#lazy-predict)
     - [Machine Learning](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#machine-learning)
 [Deployment](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#deployment)
+
 [Conclusion](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
   - [Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#results)
 
