@@ -289,7 +289,7 @@ The resulting correlation matrix shows no multi-collinearity/strong correlations
 
 
 #### Adding in Supplemental Subway Station Data
-Following the observation that location rating was an important feature to determining price, it is now even more convincing that subway station data may enhance the model even further. A new dataset was added to the notebook to pull in longitude and latitude of subway station entrances. The map of the subway stations confirms that it will span appropriately to all of the Airbnb locations.
+A new dataset was added to the notebook to pull in longitude and latitude of subway station entrances. The map of the subway stations confirms that it will span appropriately to all of the Airbnb locations.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/301ee906-ba59-4632-8cec-392b0e0424d0)
 
