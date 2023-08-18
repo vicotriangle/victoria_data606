@@ -1,4 +1,4 @@
-Victoria Borsetti
+Victoria
 
 August 1, 2023
 
