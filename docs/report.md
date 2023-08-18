@@ -9,6 +9,24 @@
 
 ## Table of Contents
 [Overview](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#overview)
+  - [Background](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#background)
+  - [Purpose](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#purpose)
+  - [Data Sources](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#data-sources)
+  - [Approach](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#approach)
+[Execution](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#execution
+  - [Preliminary Data Exploration](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#preliminary-data-exploration)
+  - [Model Development](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#model-development)
+    - [Data Cleansing](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#data-cleansing)
+    - [Encoding Categorical Columns](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#encoding-categorical-columns)
+    - [Natural Language Processing](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#natural-language-processing)
+    - [Normalization & Feature Selection](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#normalization--feature-selection)
+    - [Adding in Supplemental Subway Station Data](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#adding-in-supplemental-subway-station-data)
+    - [Lazy Predict](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#lazy-predict)
+    - [Machine Learning](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#machine-learning)
+[Deployment](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#deployment)
+[Conclusion](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
+  - [Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#results)
+
 
 
 ## Overview
