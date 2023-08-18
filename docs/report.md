@@ -131,31 +131,35 @@ The preliminary analysis of the data confirmed that this dataset is informative 
 #### Airbnb Map
 To get a visual of the data, longitude and latitude is plotted for each Airbnb. In the image below, Staten Island data is sparse. To the left of Manhattan, there appears to be Airbnbs included that are actually in New Jersey. These anomalies will have to be handled before this data can be used in a machine learning model.
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/b4c7e805-679d-41b5-a97e-0c5538b1ea5e)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/57ae0147-f572-41c1-8d81-41230d699486)
+
 
 #### Statistics
 The shape of the data is 37,410 rows by 74 columns. Many of the fields can be eliminated based on their description as they will not improve the price prediction model. These include the url fields, description fields, host information, and scrape information. Frequency of column nulls is checked using the visual below to ensure enough data is present for proper analysis. In general, the listings data has a high rate of populated fields. Important fields like price, longitude, latitude, number of reviews, property type, room type, accommodates and amenities all have data for every listing. These are key fields that will be crucial for the goal of predicting price. Bathrooms, calendar updated, and license are largely unused and may be deleted. For the fields that contain an acceptable amount of blanks such as review scores, beds, bedrooms, and bathroom text, a strategy for handling these will have to be decided on during data cleansing. These are not in quantities that will materially impact results.
 
 Columns with significant null rates are shown below.
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/89f50006-9602-4d34-8d45-6e0ebaaa8115)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/b77b9d79-b59b-4c75-a84e-956fa2c74ffb)
 
 Datatypes need to be changed as appropriate for the columns that are in an unusable format. For example, price is a string that includes a "$" that needs to be removed and converted to float. There is one column "bathrooms" that contains no data, but it is discovered that column "bathroom text" contains the number of bathrooms and the bathroom type of "private" or "shared" which can be extracted, split and used in place of "bathrooms". Standard statistics are taken for every numerical column. Some of the fields including accommodates, host listings count, and beds have dramatic outliers, although this will not materially affect the usability of the dataset. There is a sufficient amount of data to accommodate substantial data cleansing even if all outliers are removed. 
 
 To supplement the outlier observation for price that was made initially, a boxplot of is used to visualize the distribution of values. It will be important to remove a significant amount of data that sits outside of a few standard deviations from the mean. If not, the model will be less accurate.
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/69b5a801-5dfe-48cd-be97-4868f7dba6ee)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/8c896663-2d40-461b-a82f-0f30aec6de61)
+
 
 Charts such as histograms, tables, and correlation scatterplots did not expose any further insights beyond the discovery that this data is dramatically right-skewed. Correlation plots with all columns versus price did not reveal strong trends, but did have loose relationships for key fields mentioned above that will be exploited later.
 
 A heatmap is made on a scatter plot of the key field, overall ratings versus prices to understand their distribution and density. Listings with a price of just under $100 and a rating near 5.0 are the most common.
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/2de1c880-fda1-46ca-88e3-9cb3c6612f77)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/2e1524c4-384c-4824-b7d6-d31fa0287916)
+
 
 Likewise, a density heatmap of the key field representing the number of people a listing accommodates versus price is created to see if there is an obvious trend. The most common accommodation is for that of 2 to 3 guests. There is a slight correlation to price, but since data is so dense at very low cost, the outliers of price and accommodates make it difficult to observe.
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/19082260-f382-4357-87e1-ac8b435add33)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/f6f6e7e2-af31-44f3-9e7c-3c39828e1b9c)
+
 
 To see the distribution of room types, another key field, a bar chart is created. The listings in this dataset are largely entire homes and private rooms.
 
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/deed3215-cad0-487c-99f8-87f585adc872)
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/c3a6df25-0f63-4ea3-9859-47415fd6bd13)
 
 For the purposes of this project, this data is deemed usable based on rate of populated key fields, volume of data points, minimal data quality issues, and presence of fields expected to impact price most highly.
 
@@ -215,7 +219,8 @@ Per the observations in the preliminary exploration, there is significant data c
     - host_is_superhost nulls were filled with "f" for false as hosts would want this populated to get higher demand if it were true.
 
 After this cleanup, the dataset contains 20,851 Airbnb listings and 32 information fields. The map below shows the results of datapoint removal.
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/cda60d01-1634-4dcf-85f6-de742bad608b)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/8dcc38f0-237c-4e26-9e9a-f607b75eb155)
+
 
 #### Encoding Categorical columns
 In order to use a machine learning model, all columns have to be numerical. There are 6 columns that are categorical and an appropriate conversion to numbers must be selected. The following encoding methods were performed per each column:
@@ -241,7 +246,7 @@ The amenities field contains important features offered by each Airbnb in a list
 3. Remove stop words - common words that do not contribute to meaning of the amenity are removed.
 4. Create a table that shows the top 10 amenities and their frequencies:
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/6ed3cb1b-2900-4fba-a3d2-ad5df4a9f361)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/78b9a76b-0b4b-465e-8d1d-f0356e604add)
 
 5. Add this information back into the dataset in the form of one-hot encoding each of the ten amenities into columns. If the Airbnb has that amenity in its amenities column, the corresponding column will be "1" and "0" if not.
 
@@ -277,12 +282,14 @@ In order to ensure no one feature is given a stronger weight by the machine lear
 
 
 The resulting correlation matrix shows no multi-collinearity/strong correlations between fields. This is imperative to ensuring the model is not overfit to the data.
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/012898ab-f48a-4999-adfb-e6e169a89f2c)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/9e079fd4-8b9e-4d70-b9be-2c3ee8c6f2b7)
+
 
 #### Adding in Supplemental Subway Station Data
 Following the observation that location rating was an important feature to determining price, it is now even more convincing that subway station data may enhance the model even further. A new dataset was added to the notebook to pull in longitude and latitude of subway station entrances. The map of the subway stations confirms that it will span appropriately to all of the Airbnb locations.
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/ac6033f0-1c45-491b-810e-7998111cdb78)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/301ee906-ba59-4632-8cec-392b0e0424d0)
+
 
 Two columns were added to the Airbnb dataset. 'Distance', which will be the distance in feet from the Airbnb to the nearest subway station, and 'accessibility' which will be a flag that is 1 if the closest station is within 2,000ft and 0 if not. 2,000ft was found to be the distance that most improved the model while testing between 500ft and 5,000ft. This is logical, as 2,000 is approximately 3 blocks in NYC terms.
 Cdist is a function that takes two sets of longitude and latitude arrays and calculates the distances between every set of points. This can be used to identify the shortest distance for each Airbnb and inserting it into the new 'distance' column. 'Accessibility' is then calculated based on this distance. Between both new columns, 'accessibility' was found to improve the model on its own more. Therefore, 'distance' was removed to avoid overfitting.
@@ -291,7 +298,8 @@ Cdist is a function that takes two sets of longitude and latitude arrays and cal
 
 After feature selection and addition of distance, these were the features that influenced price the most and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months. This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is. This will be further explored when subway station data is added to the model.
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/1fdb154e-58ab-4189-b0f5-149007f336fe)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/c1811b65-0479-485e-b804-5c3c1c1fb7ca)
+
 
 
 #### Lazy Predict
