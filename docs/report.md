@@ -408,9 +408,30 @@ Throughout the process of refining the final dataset and features, the three mac
 
 
 #### Analysis of Deployment Application
-For the StreamLit app, accuracy is at 57.69. Although it is quite a bit less accurate, the tool must sacrifice some of it's performance for user-friendliness. If the tool requests information that is not intuitive or easy accessible to the Airbnb host, usability is reduced and the tool is not providing the service as intended. These more nuanced data points include the number of reviews the listing received in the last 12 months, the review rating of location, and the availablility in the next 30 days. Easier information to produce is borough the Airbnb is located in, typical listing data, and amentities it offers. The tool was a success based on easy of use, user-friendliness, style, and output.
+For the StreamLit app, accuracy is at 57.69. Although it is quite a bit less accurate than the higher-feature models that were refined in this project, the tool must sacrifice some of it's performance for user-friendliness. In addition, there was functionality in StreamLit that did not work. A user should be able to create a requirements.txt file in GitHub that contains the imports for the functions used in the desired model. A JSON of the model was successfully exported in Python and uploaded to GitHub, but because StreamLit was unable to process the necessary package imports, this step failed. For that reason, a simple linear regression model was used by brute-force calculation of price using coefficients. The tool was also created so that the information it requests is easily obtainable by a host. If the tool requires information that is not intuitive or cannot be retrieved on the fly by the Airbnb host, usability is reduced and the tool is not providing the service as intended. These more nuanced data points include the number of reviews the listing received in the last 12 months, the review rating of location, and the availablility in the next 30 days. Easier information to produce is borough the Airbnb is located in, overall rating, typical listing data, and amentities it offers. The tool was a success based on easy of use, user-friendliness, style, and output.
 
 ### Learnings
+This project was a successful learning experience. On the surface, the full lifecyle of discovery to deployment of a project using machine learning has greatly enhanced my skillset and knowledge. This includes in the areas of:
+1. Understanding whether a dataset is usable
+   - This dataset was excessively right-skewed. Because of this, there were challenges in visualizing the data. Using density charts was much more effective in understanding features than boxplots, scatter charts, and histograms.
+3. Data preparation
+   - Sklearn's label encoder shortcut made it easy to assign consecutive numbers to categorical values that did not have ordinality.
+   - Understanding when it is appropriate to use which type of encodings (label encode, custom encode, one-hot encode)
+   - Assessing whether a change in the dataset would improve the model was done using linear refgression RMSE excessively in order to produce the best result to be entered into the final regression model. Improvement occurred when Airbnbs in NJ and Staten Island were removed, interquartile method was used on price to eliminate outliers, amenities were added, feature selection was performed on amenities, and when supplemental data was added (station locations). The model worsened when all data was removed except Manhattan, ratings of 0, price of 0, and listings with less than 3 reviews were included. It also did not help the model to reduce the outliers any further than 1.5x the interquartile range, which was interesting.
+   - It was the first time I used Natural Language Processing effectively in a project. Using NLP to parse through 3,800 amenities to identify the most frequent options was a value add to the final product.
+4. Machine learning techniques
+   - Using LazyPredict made it trivial to choose the best machine learning model. I knew I wanted to use linear regression to understand feature importance, and polynomial regression based on the results of the linear regression displaying polynomial patterns. It was the first time I used LazyPredict to identify the best model for a project.
+   - LGBM Regression model was the best model result from LazyPredict and the one I used.
+5. Streamlit, VSCode, GitHub
+   - It was my first time using GitHub to manage project files, edit .md files in markdown, and fork to our class's repository.
+   - Using VSCode was a new skill I needed for the development step of the StreamLit application. On running the code in VSCode, the user interface on a local instance of the browser would refresh and display the StreamLit tool I built.
+   - It was also my first time using StreamLit. This is a powerful application and was awesome to see my project come to life in a public user interface. It pulls code straight from my GitHub repository.
+6. Google Maps API
+   - For calculating the distance between Airbnbs and subway stations, initially I used the Google Maps API. This was a cool implementation in Python and process to learn. It enabled the addition of an accurate walking distance stright from GoogleMaps as a guest would use to navigate to the nearest subway. However, the Google Map API is only free for a trial period. The volume of API calls needed for this project was high and I made the mistake of running the entire dataset through the API several times before I realized I was racking up a near $1,000 bill from Google. In the future, I will use smaller sample data sets to refine the code needed, and only run the entire code once, after all the code was perfected.
+7. Real Estate data
+   - Real estate prices are somewhat influenced by the "eye of the beholder" effect. There may be a large range of acceptable price
+  
+
 
 
 ### Future Research
