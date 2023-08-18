@@ -8,7 +8,7 @@
 
 
 ## Table of Contents
-[Overview](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#overview)
+[**Overview**](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#overview)
   - [Background](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#background)
   - [Purpose](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#purpose)
   - [Data Sources](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#data-sources)
