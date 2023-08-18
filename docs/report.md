@@ -27,7 +27,7 @@
   - [Deployment](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#deployment)
 
 [**Conclusion**](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
-  - [Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#results)
+  - [Interpretation of Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#interpretation-of-results)
   - [Lessons Learned](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#lessons-learned)
   - [Future Research](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#future-research)
 
@@ -326,7 +326,7 @@ Cdist is a function that takes two sets of longitude and latitude arrays and cal
 
 ##### Final Features
 
-After feature selection and addition of distance, 14 final features prevail. The below table shows the features that most influenced price and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months, followed by bedrooms, number of people the listing accommodates, rating of the location, room type, etc. 3 features contributed to a lower price including mentioning 'kitchen' in amenities, and having a location in the boroughs of Queens and the Bronx. See [Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#results) section for analysis of the final features.
+After feature selection and addition of distance, 14 final features prevail. The below table shows the features that most influenced price and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months, followed by bedrooms, number of people the listing accommodates, rating of the location, room type, etc. 3 features contributed to a lower price including mentioning 'kitchen' in amenities, and having a location in the boroughs of Queens and the Bronx. See [Interpretation of Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#interpretation-of-results) section for analysis of the final features.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/c1811b65-0479-485e-b804-5c3c1c1fb7ca)
 
