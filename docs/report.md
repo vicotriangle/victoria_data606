@@ -103,7 +103,7 @@ The file from Kaggle is 88MB and includes 37k Airbnb listings from New York City
 
 
 #### Supplemental Data
-The hypothesis behind additional data is that an attribute that quantifies convenience of location of an Airbnb may affect daily price. Subway station location data is available through the NYC Metropolitan Transportation Authority. Calculating distance to the nearest station may contribute to a more accurate model.
+The hypothesis behind additional data is that an attribute that quantifies convenience of location of an Airbnb may affect its daily price. Subway station location data is available through the NYC Metropolitan Transportation Authority. Calculating distance to the nearest station may contribute to a more accurate model.
 
   - Stations data can be found at the link: https://data.ny.gov/widgets/i9wp-a4ja
 
@@ -299,7 +299,7 @@ Cdist is a function that takes two sets of longitude and latitude arrays and cal
 
 ##### Final Features
 
-After feature selection and addition of distance, these were the features that influenced price the most and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months. This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is.
+After feature selection and addition of distance, 14 final features prevail. The below table shows the features that most influenced price and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months, followed by bedrooms, number of people the listing accommodates, rating of the location, room type, etc. 3 features contributed to a lower price including mentioning 'kitchen' in amenities, and having a location in the boroughs of Queens and the Bronx. See Results section for analysis of the final features.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/c1811b65-0479-485e-b804-5c3c1c1fb7ca)
 
@@ -329,7 +329,6 @@ The polynomial regression model produced an RMSE of 52.60. This means that on av
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/2b51ad1a-b05f-41ec-9392-08b80e7338e4)
 
 
-
 ##### LGBM Regression Results
 The LGBM regression model produced an RMSE of 49.96. This means that on average, the price is off from the target by $49.96 per Airbnb. The resulting chart comparing target to predicted price shows a tighter figure that indicates a closer trend to target=predicted.
 
@@ -348,5 +347,18 @@ The StreamLit application is accessible at the link: https://victoriadata606-nbr
 The user interface looks like this. It allows the user to enter the details of the Airbnb and calculate a daily price.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/376bde96-d4a4-46ed-815b-df6d1acb8d69)
+
+
+## Conclusion
+
+### Results
+The final features revealed some interesting discoveries about Airbnb pricing and highlighted areas to be further researched (see future research section below). This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is.
+
+Throughout the process of refining the final dataset and features, the three machine learning models were analyzed to assess the impact of each change. To optimize the model, there must be a balance between enough features that do not correlate with eachother to produce a reasonable accuracy, and minimizing the feature count to have good performance of the model and limited information that would need to be collected from an investor using the tool. If the change improved the model, it was kept. If it worsened the model without minimizing features or rectifying multi-collinearity, it was not included. The table below shows the RMSE of each regression model at each phase of the execution. At every step, the LGBM regression model out-performs the polynomial regression model which out-performs the linear regression model. After step 1, accuracy decreased by about $6 because of the removal of highly correlated features. However, the feature count went from 30 to 11, which is a desirable trade-off. Likewise, feature selection at step 4 reduced features from 21 to 13 to remove fields that did not contribute to the model significantly. At the final step, accessibility improved the model minimally, but reduced error to under $50 per day, which is a respectable result for the first version of this project.
+
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/517c42f3-1f87-4a7a-8b22-83fc361f23ae)
+
+For the StreamLit app, accuracy is at 57.69. Although it is quite a bit less accurate, the tool must sacrifice some of it's performance for user-friendliness. If the tool requests information that is not intuitive or easy accessible to the Airbnb host, usability is reduced and the tool is not providing the service as intended. These more nuanced data points include the number of reviews the listing received in the last 12 months, the review rating of location, and the availablility in the next 30 days. Easier information to produce is borough the Airbnb is located in, typical listing data, and amentities it offers. The tool was a success based on easy of use, user-friendliness, style, and output.
+
 
 
