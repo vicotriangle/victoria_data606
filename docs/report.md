@@ -143,18 +143,20 @@ Columns with significant null rates are shown below.
 Datatypes need to be changed as appropriate for the columns that are in an unusable format. For example, price is a string that includes a "$" that needs to be removed and converted to float. There is one column "bathrooms" that contains no data, but it is discovered that column "bathroom text" contains the number of bathrooms and the bathroom type of "private" or "shared" which can be extracted, split and used in place of "bathrooms". Standard statistics are taken for every numerical column. Some of the fields including accommodates, host listings count, and beds have dramatic outliers, although this will not materially affect the usability of the dataset. There is a sufficient amount of data to accommodate substantial data cleansing even if all outliers are removed. 
 
 To supplement the outlier observation for price that was made initially, a boxplot is used to visualize the distribution of values. It will be important to remove a significant amount of data that sits outside of a few standard deviations from the mean. If not, the model will be less accurate.
+
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/8c896663-2d40-461b-a82f-0f30aec6de61)
 
 
 Charts such as histograms, tables, and correlation scatterplots did not expose any further insights beyond the discovery that this data is dramatically right-skewed. Correlation plots with all columns versus price did not reveal strong trends, but did have loose relationships for key fields mentioned above that will be exploited later.
 
 A heatmap is made on a scatter plot of the key field, overall ratings versus prices to understand their distribution and density. Listings with a price of just under $100 and a rating near 5.0 are the most common.
+
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/2e1524c4-384c-4824-b7d6-d31fa0287916)
 
 
 Likewise, a density heatmap of the key field representing the number of people a listing accommodates versus price is created to see if there is an obvious trend. The most common accommodation is for that of 2 to 3 guests. There is a slight correlation to price, but since data is so dense at very low cost, the outliers of price and accommodates make it difficult to observe.
-![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/f6f6e7e2-af31-44f3-9e7c-3c39828e1b9c)
 
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/f6f6e7e2-af31-44f3-9e7c-3c39828e1b9c)
 
 To see the distribution of room types, another key field, a bar chart is created. The listings in this dataset are largely entire homes and private rooms.
 
