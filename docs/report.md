@@ -314,7 +314,7 @@ The data is ready to be used in machine learning. The three models used are:
 3. LGBM Regression
 
 ##### Linear Regression Results
-The linear regression model produced an RMSE of 55.12. This means that on average, the price is off from the target by $55.12 per Airbnb. What is interesting about the resulting chart is that as target price increased by one unit, the predicted price increased at a smaller unit. In other words, the relationship here looks polynomial. Perhaps a polynomial regression model would produce better results.
+The linear regression model produced an RMSE of 55.16. This means that on average, the price is off from the target by $55.16 per Airbnb. What is interesting about the resulting chart is that as target price increased by one unit, the predicted price increased at a smaller unit. In other words, the relationship here looks polynomial. Perhaps a polynomial regression model would produce better results.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/1701a8d6-2a13-4485-8783-71d448dba973)
 
