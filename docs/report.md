@@ -12,7 +12,7 @@
 Real Estate and travel are passions of mine. I frequently use accommodation services such as Airbnb, VRBO, Zillow, Realtor.com, etc. to explore, visit, and book properties all around the world. Currently, for Airbnb investors, it is difficult to perceive market fluctuations and monitor the supply and demand of accommodation options to ensure a competitive, yet profitable daily cost. There is no direct way to analyze comparable homes, understand what attributes of the Airbnb demand a higher rate, or identify issues in the listing that are affecting bookings. The impact of this is profit loss on homes priced too low, low booking rates on homes priced too high, and poor investment management due to the "black-box" nature of Airbnb cost setting.
 
 ### Purpose
-There is likely a recipe that can determine an appropriate daily cost for an Airbnb based on typical property features, location, amenities, and overall experience ratings. This project attempts the following:
+Perhaps there is a recipe that can determine an appropriate daily cost for an Airbnb based on typical property features, location, amenities, and overall experience ratings. This project attempts the following:
 1. Use machine learning to understand what attributes of an Airbnb contribute most to its price.
 2. Create a webapp where an investor could input key information of their listing, and using a machine learning model, could calculate the market cost of their Airbnb.
 
