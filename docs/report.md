@@ -28,9 +28,9 @@
 
 [**Conclusion**](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
   - [Interpretation of Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#interpretation-of-results)
-    - [Analysis of Features]
-    - [Analysis of Machine Learning Models]
-    - [Analysis of Deployment Application]
+    - [Analysis of Features](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#analysis-of-features)
+    - [Analysis of Machine Learning Models](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#analysis-of-machine-learning-models)
+    - [Analysis of Deployment Application](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#analysis-of-deployment-application)
   - [Learnings](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#learnings)
   - [Future Research](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#future-research)
 
