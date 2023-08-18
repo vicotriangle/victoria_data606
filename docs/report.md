@@ -28,6 +28,8 @@
 
 [**Conclusion**](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
   - [Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#results)
+  - [Lessons Learned](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#lessons-learned)
+  - [Future Research](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#future-research)
 
 
 
@@ -324,7 +326,7 @@ Cdist is a function that takes two sets of longitude and latitude arrays and cal
 
 ##### Final Features
 
-After feature selection and addition of distance, 14 final features prevail. The below table shows the features that most influenced price and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months, followed by bedrooms, number of people the listing accommodates, rating of the location, room type, etc. 3 features contributed to a lower price including mentioning 'kitchen' in amenities, and having a location in the boroughs of Queens and the Bronx. See Results section for analysis of the final features.
+After feature selection and addition of distance, 14 final features prevail. The below table shows the features that most influenced price and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months, followed by bedrooms, number of people the listing accommodates, rating of the location, room type, etc. 3 features contributed to a lower price including mentioning 'kitchen' in amenities, and having a location in the boroughs of Queens and the Bronx. See [Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#results) section for analysis of the final features.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/c1811b65-0479-485e-b804-5c3c1c1fb7ca)
 
@@ -384,6 +386,10 @@ Throughout the process of refining the final dataset and features, the three mac
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/517c42f3-1f87-4a7a-8b22-83fc361f23ae)
 
 For the StreamLit app, accuracy is at 57.69. Although it is quite a bit less accurate, the tool must sacrifice some of it's performance for user-friendliness. If the tool requests information that is not intuitive or easy accessible to the Airbnb host, usability is reduced and the tool is not providing the service as intended. These more nuanced data points include the number of reviews the listing received in the last 12 months, the review rating of location, and the availablility in the next 30 days. Easier information to produce is borough the Airbnb is located in, typical listing data, and amentities it offers. The tool was a success based on easy of use, user-friendliness, style, and output.
+
+### Lessons Learned
+
+### Future Research
 
 
 
