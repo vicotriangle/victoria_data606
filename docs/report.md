@@ -13,7 +13,7 @@
   - [Purpose](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#purpose)
   - [Data Sources](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#data-sources)
   - [Approach](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#approach)
-[Execution](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#execution
+[Execution](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#execution)
   - [Preliminary Data Exploration](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#preliminary-data-exploration)
   - [Model Development](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#model-development)
     - [Data Cleansing](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#data-cleansing)
