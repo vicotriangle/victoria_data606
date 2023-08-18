@@ -296,7 +296,7 @@ Cdist is a function that takes two sets of longitude and latitude arrays and cal
 
 ##### Final Features
 
-After feature selection and addition of distance, these were the features that influenced price the most and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months. This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is. This will be further explored when subway station data is added to the model.
+After feature selection and addition of distance, these were the features that influenced price the most and their importance. The most important feature is the number of reviews the Airbnb received in the past 12 months. This is not too surprising. This is the only feature that gives an indication of how often a bnb is booked. The more a bnb is booked, the better the experience likely was for the guest, the higher the rating, and therefore, the higher the price. Number of bedrooms and number of people the bnb accommodates are also not surprising. Location rating is an interesting  4th feature that points to convenience being an important factor in how expensive an Airbnb is.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/c1811b65-0479-485e-b804-5c3c1c1fb7ca)
 
@@ -305,8 +305,7 @@ After feature selection and addition of distance, these were the features that i
 #### Lazy Predict
 LazyPredict is used to get quick results of many machine learning models and a first approximation of their accuracy. It is found that LGBMRegressor would be the best fit model for this particular data. Documentation for this model is at the link: https://lightgbm.readthedocs.io/en/latest/pythonapi/lightgbm.LGBMRegressor.html
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/c298929e-2a6e-423d-b4e5-99f280eeee5c)
-
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/4784d8d3-1e84-4787-a6d7-5d34c9c6bdda)
 
 #### Machine Learning
 The data is ready to be used in machine learning. The three models used are:
@@ -317,20 +316,21 @@ The data is ready to be used in machine learning. The three models used are:
 ##### Linear Regression Results
 The linear regression model produced an RMSE of 55.12. This means that on average, the price is off from the target by $55.12 per Airbnb. What is interesting about the resulting chart is that as target price increased by one unit, the predicted price increased at a smaller unit. In other words, the relationship here looks polynomial. Perhaps a polynomial regression model would produce better results.
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/78f57831-7a94-455a-9b3b-ea0512f4e52f)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/1701a8d6-2a13-4485-8783-71d448dba973)
+
 
 
 ##### Polynomial Regression Results
 The polynomial regression model produced an RMSE of 52.60. This means that on average, the price is off from the target by $52.60 per Airbnb. The resulting chart comparing target to predicted price shows a more linear shape indicating a better fit model.
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/bb11b11d-f211-4980-b059-c745c067a4c4)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/2b51ad1a-b05f-41ec-9392-08b80e7338e4)
+
 
 
 ##### LGBM Regression Results
 The LGBM regression model produced an RMSE of 49.96. This means that on average, the price is off from the target by $49.96 per Airbnb. The resulting chart comparing target to predicted price shows a tighter figure that indicates a closer trend to target=predicted.
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/c467aaa9-b7d7-469e-80b5-6d313994d879)
-
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/7ccb10da-672b-4dcd-b694-e23697f5c6b9)
 
 
 ### Deployment
@@ -338,4 +338,5 @@ Implementation of a tool that assists Airbnb Investors in understanding the mark
 
 With these features, the importance of each changes from the original regression model. The most important attribute is whether the property is in Manhattan or not. If so, there is a $37 gain on the daily cost. Conversely, having a kitchen reduces the daily cost by more than $28. This is surprising, but may be because those that mention "kitchen" in their amenities
 
-![image](https://github.com/DATA-606-SUMMER-2023/victoria_data606/assets/135077759/69da31c2-00a4-446e-9b98-abc8efcd27c5)
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/57772a6c-a902-4b33-9d97-327cc9234be2)
+
