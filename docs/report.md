@@ -20,8 +20,8 @@ Perhaps there is a recipe that can determine an appropriate daily cost for an Ai
 #### Primary Data
 The data being used for this project are details of Airbnb listings in New York City that were scraped from the site by a third-party.
 
-  - Airbnb data comes from Kaggle at the link: [Kaggle](https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv)
-  - Column descriptions can be found at the link: [Descriptions](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596)
+  - Airbnb data comes from [Kaggle](https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv)
+  - [Metadata](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596) is available for column descriptions and is displayed below.
 
 The file from Kaggle is 88MB and includes 37k Airbnb listings from New York City downloaded in June of 2022. It contains 74 fields of information. The full list and description of the fields are as follows:
 
@@ -105,12 +105,12 @@ The file from Kaggle is 88MB and includes 37k Airbnb listings from New York City
 #### Supplemental Data
 The hypothesis behind additional data is that an attribute that quantifies convenience of location of an Airbnb may affect its daily price. Subway station location data is available through the NYC Metropolitan Transportation Authority. Calculating distance to the nearest station may contribute to a more accurate model.
 
-  - Stations data can be found at the link: https://data.ny.gov/widgets/i9wp-a4ja
+  - [Subway Station Locations](https://data.ny.gov/widgets/i9wp-a4ja) are made available by the state of NY
 
 The file from New York City Stations Database is 457kB and includes 1.8k records and 34 fields. The only fields used in this project are longitude and latitude of station entrances so they can be compared to longitudes and latitudes of each Airbnb.
 
 ### Approach
-All code, documents, and presentations will be published to Github: https://github.com/vicotriangle/victoria_data606/blob/main/. Python will be used for data exploration and model development through Google Colab (.ipynb). Streamlit will be used to create the user interface for the webapp, VSCode for editing, and GitHub as the deployment source for StreamLit.
+All code, documents, and presentations will be published to [Github](https://github.com/vicotriangle/victoria_data606/blob/main/). Python will be used for data exploration and model development through Google Colab (.ipynb). Streamlit will be used to create the user interface for the webapp, VSCode for editing, and GitHub as the deployment source for StreamLit.
 The procedure used for this project includes the following:
 1.	Preliminary Data Exploration
 2.	Model Development
@@ -342,7 +342,7 @@ With these features, the importance of each changes from the original regression
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/57772a6c-a902-4b33-9d97-327cc9234be2)
 
-The StreamLit application is accessible at the link: https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/. The user interface looks like this. It allows the user to enter the details of the Airbnb and calculate a daily price.
+The web application was built using [StreamLit](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/). The user interface looks like the below. It allows the user to enter the details of the Airbnb and calculate a daily price.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/376bde96-d4a4-46ed-815b-df6d1acb8d69)
 
