@@ -346,6 +346,7 @@ With these features, the importance of each changes from the original regression
 The StreamLit application is accessible at the link: https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/
 
 The user interface looks like this. It allows the user to enter the details of the Airbnb and calculate a daily price.
+
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/376bde96-d4a4-46ed-815b-df6d1acb8d69)
 
 
