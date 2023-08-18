@@ -14,7 +14,7 @@
   - [Data Sources](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#data-sources)
   - [Approach](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#approach)
 _______________________________
-[Execution](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#execution)
+[**Execution**](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#execution)
   - [Preliminary Data Exploration](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#preliminary-data-exploration)
   - [Model Development](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#model-development)
     - [Data Cleansing](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#data-cleansing)
@@ -24,9 +24,9 @@ _______________________________
     - [Adding in Supplemental Subway Station Data](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#adding-in-supplemental-subway-station-data)
     - [Lazy Predict](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#lazy-predict)
     - [Machine Learning](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#machine-learning)
-[Deployment](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#deployment)
+  - [Deployment](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#deployment)
 _______________________________
-[Conclusion](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
+[**Conclusion**](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#conclusion)
   - [Results](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md#results)
 
 
