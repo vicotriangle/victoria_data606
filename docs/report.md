@@ -37,7 +37,7 @@
 
 
 ## Overview
-Project presentation is [here](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx)
+Project presentation is [here](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) \
 YouTube video presentation is [here]
 
 ### Background
