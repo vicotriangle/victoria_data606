@@ -12,7 +12,7 @@
 Real Estate and travel are passions of mine. I frequently use accommodation services such as Airbnb, VRBO, Zillow, Realtor.com, etc. to explore, visit, and book properties all around the world. Currently, for Airbnb investors, it is difficult to perceive market fluctuations and monitor the supply and demand of accommodation options to ensure a competitive, yet profitable daily cost. There is no direct way to analyze comparable homes, understand what attributes of the Airbnb demand a higher rate, or identify issues in the listing that are affecting bookings. The impact of this is profit loss on homes priced too low, low booking rates on homes priced too high, and poor investment management due to the "black-box" nature of Airbnb cost setting.
 
 ### Purpose
-An intriguing thought motivates this work: there is likely a recipe that can determine an appropriate daily cost for an Airbnb based on typical property features, location, amenities, and overall experience ratings. This project attempts the following:
+There is likely a recipe that can determine an appropriate daily cost for an Airbnb based on typical property features, location, amenities, and overall experience ratings. This project attempts the following:
 1. Use machine learning to understand what attributes of an Airbnb contribute most to its price.
 2. Create a webapp where an investor could input key information of their listing, and using a machine learning model, could calculate the market cost of their Airbnb.
 
@@ -334,9 +334,15 @@ The LGBM regression model produced an RMSE of 49.96. This means that on average,
 
 
 ### Deployment
-Implementation of a tool that assists Airbnb Investors in understanding the market price of their bnb was built in StreamLit. The model used was a simplified linear regression model that only includes the fields most relevant and most obtainable to an Airbnb host. These include borough, maximum occupancy, room type, number of bedrooms, number of bathrooms, overall rating, and host is superhost. The RMSE of this model is 57.69. This model sacrifices accuracy for usability by about $10.
+Implementation of a tool that assists Airbnb Investors in understanding the market price of their bnb was built in StreamLit. The model used was a simplified linear regression model that only includes the fields most relevant and most obtainable to an Airbnb host. These include borough, maximum occupancy, room type, number of bedrooms, number of bathrooms, overall rating, and host is superhost. The RMSE of this model is 57.69. This model sacrifices accuracy for usability by about $10 compared to our optimized model with more features.
 
-With these features, the importance of each changes from the original regression model. The most important attribute is whether the property is in Manhattan or not. If so, there is a $37 gain on the daily cost. Conversely, having a kitchen reduces the daily cost by more than $28. This is surprising, but may be because those that mention "kitchen" in their amenities
+With these features, the importance of each changes from the original regression model. The most important attribute is whether the property is in Manhattan or not. If so, there is a $37 gain on the daily cost. Conversely, having a kitchen reduces the daily cost by more than $28. This is surprising, but may be because those that mention "kitchen" in their amenities are not offering an entire home/apartment and it is just a private room. In this case, having to specify a kitchen results in lower price as would be expected for a property offering just a private room.
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/57772a6c-a902-4b33-9d97-327cc9234be2)
+
+The StreamLit application is accessible at the link: https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/
+
+The user interface looks like this. It allows the user to enter the details of the Airbnb and calculate a daily price.
+![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/376bde96-d4a4-46ed-815b-df6d1acb8d69)
+
 
