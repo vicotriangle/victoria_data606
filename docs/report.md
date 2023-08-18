@@ -221,6 +221,7 @@ Per the observations in the preliminary exploration, there is significant data c
     - host_is_superhost nulls were filled with "f" for false as hosts would want this populated to get higher demand if it were true.
 
 After this cleanup, the dataset contains 20,851 Airbnb listings and 32 information fields. The map below shows the results of datapoint removal.
+
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/8dcc38f0-237c-4e26-9e9a-f607b75eb155)
 
 
