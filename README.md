@@ -27,6 +27,6 @@ This repository contains all files used to create a webapp that analyzes Airbnb 
     - **StreamLit.ipynb** - Python notebook that contains data cleansing and machine learning for purposes of the StreamLit web application deployment.
     - **GoogleMapsAPI.ipynb** - Python notebook that contains code for using a Google Maps API key and calling the API to retrieve walking distances between two coordinates.
    
-**requirements.txt** - Text file used for StreamLit. This file contains all packaged that need to be imported into the StreamLit application. StreamLit will not work unless this file exists.
+**requirements.txt** - Text file used for StreamLit. This file contains all packages that need to be imported into the StreamLit application. StreamLit will not work unless this file exists.
 
 **streamlit_test.py** - Python file for StreamLit. This file contains code for the development of the StreamLit application. StreamLit will not work unless this file exists.
