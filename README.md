@@ -5,10 +5,13 @@
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/acff7126-38cb-4d52-b7af-68f4a96e62e7)
 
-This repository contains all files used to create a webapp that analyzes Airbnb prices using machine learning.
 
+## Presentation Links
 [YouTube Video](https://www.youtube.com/watch?v=VHAO_WALIQc) of presentation \
 [Airbnb Price Analyzer](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/) web tool
+
+
+This repository contains all files used to create a webapp that analyzes Airbnb prices using machine learning.
 
   - **data** - README file with all source data links, descriptions, and code to import.
 
