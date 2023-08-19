@@ -4,7 +4,7 @@ This project utilizes two raw data sources from the web. The primary source is N
 ## Two options for viewing Airbnb and subway station location data:
 1. View/download from original sources:
   - Airbnb data comes from [Kaggle](https://www.kaggle.com/datasets/dominoweir/inside-airbnb-nyc?select=listings+2.csv)
-  - [Metadata](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596) is available for column descriptions and is displayed below.
+    - [Metadata](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596) is available for column descriptions and is displayed below.
   - [Subway Station Locations](https://data.ny.gov/widgets/i9wp-a4ja) are made available by the state of NY
 2. Import from my personal Google Drive using code given below
 
