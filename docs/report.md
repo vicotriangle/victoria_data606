@@ -38,7 +38,7 @@
 
 ## Overview
 [PowerPoint](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) presentation of project \
-YouTube video presentation is
+[YouTube](https://www.youtube.com/watch?v=VHAO_WALIQc) video presentation
 
 ### Background
 Real Estate and travel are passions of mine. I frequently use accommodation services such as Airbnb, VRBO, Zillow, Realtor.com, etc. to explore, visit, and book properties all around the world. Currently, for Airbnb investors, it is difficult to perceive market fluctuations and monitor the supply and demand of accommodation options to ensure a competitive, yet profitable daily cost. There is no direct way to analyze comparable homes, understand what attributes of the Airbnb demand a higher rate, or identify issues in the listing that are affecting bookings. The impact of this is profit loss on homes priced too low, low booking rates on homes priced too high, and poor investment management due to the "black-box" nature of Airbnb cost setting.
