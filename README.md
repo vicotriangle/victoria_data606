@@ -9,6 +9,7 @@
 ## Presentation Links
 [YouTube Video](https://www.youtube.com/watch?v=VHAO_WALIQc) of presentation \
 [Airbnb Price Analyzer](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/) web tool
+[Personal GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md)
 
 ## Repository Navigation
 This repository contains all files used to create a webapp that analyzes Airbnb prices using machine learning.
