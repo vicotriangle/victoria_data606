@@ -9,7 +9,7 @@
 ## Presentation Links
 [PowerPoint](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) presentation of project \
 [YouTube](https://www.youtube.com/watch?v=VHAO_WALIQc) video presentation \
-[My Personal GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md)
+My Personal [GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md)
 
 
 ## Table of Contents
