@@ -137,7 +137,7 @@ The file from Kaggle is 88MB and includes 37k Airbnb listings from New York City
 #### Supplemental Data
 The hypothesis behind additional data is that an attribute that quantifies convenience of location of an Airbnb may affect its daily price. Subway station location data is available through the NYC Metropolitan Transportation Authority. Calculating distance to the nearest station may contribute to a more accurate model.
 
-  - [Subway Station Locations](https://data.ny.gov/widgets/i9wp-a4ja) are made available by the state of NY
+  - [Subway Stations](https://data.ny.gov/widgets/i9wp-a4ja) data is made available by the state of NY
 
 The file from New York City Stations Database is 457kB and includes 1.8k records and 34 fields. The only fields used in this project are longitude and latitude of station entrances so they can be compared to longitudes and latitudes of each Airbnb.
 
