@@ -2,8 +2,6 @@ Victoria Borsetti
 
 August 1, 2023
 
-https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx
-
 ### Overview
 Real Estate and travel are passions of mine. I frequently use accommodation services such as AirBnb, VRBO, Zillow, Realtor.com, etc. to explore, visit, and book properties all around the world. One thing that is an intriguing thought is that there must be a recipe that hosts of successful accommodations follow, or a pattern of attributes about properties, amenities, and overall experience that make those properties good candidates for renting out for short stays in a profitable way. This project attempts to understand what features of an Airbnb contributes to its daily price. The data being used for this project are details on AirBnb listings in New York City. Success will be measured using RMSE on the machine learning models. Attributes include NYC neighborhood, property type, room type, ratings, number of beds, number of bedrooms, number of baths, and amenities.
 
