@@ -1,6 +1,6 @@
 # Using Machine Learning to Analyze Airbnb Prices
 
-**Author:** Victoria \
+**Author:** Victoria Borsetti \
 **Course:** Capstone in Data Science \
 **Term:** Summer 2023
 
