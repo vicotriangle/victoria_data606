@@ -8,7 +8,8 @@
 
 ## Presentation Links
 [PowerPoint](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) presentation of project \
-[YouTube](https://www.youtube.com/watch?v=VHAO_WALIQc) video presentation \
+[YouTube Video](https://www.youtube.com/watch?v=VHAO_WALIQc) of presentation \
+[Airbnb Price Analyzer](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/) web tool \
 My Personal [GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md)
 
 
