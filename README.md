@@ -6,11 +6,13 @@
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/acff7126-38cb-4d52-b7af-68f4a96e62e7)
 
 
-## Presentation Links
-[PowerPoint](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) presentation of project \
+## Project Links
+Full Written [Report](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md) \
 [YouTube Video](https://www.youtube.com/watch?v=VHAO_WALIQc) of presentation \
-[Airbnb Price Analyzer](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/) web tool \
-My Personal [GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md)
+[Airbnb Price Analyzer](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/) Web Tool \
+[PowerPoint](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) presentation of project \
+Project Python [Notebooks] (https://troweprice.sharepoint.com/:x:/r/sites/USIIntemediaryTeam4/_layouts/15/Doc.aspx?sourcedoc=%7BD8C6D55B-7E0B-45EC-9D6A-2ECEB2F71C64%7D&file=TDF_Filter_Test_Cases.xlsx&action=default&mobileredirect=true) \
+My Personal [GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/README.md) Account
 
 ## Repository Navigation
 This repository contains all files used to create a webapp that analyzes Airbnb prices using machine learning.
