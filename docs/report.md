@@ -6,11 +6,13 @@
 
 ![image](https://github.com/vicotriangle/victoria_data606/assets/135077759/acff7126-38cb-4d52-b7af-68f4a96e62e7)
 
-## Presentation Links
-[PowerPoint](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) presentation of project \
-[YouTube Video](https://www.youtube.com/watch?v=VHAO_WALIQc) of presentation \
-[Airbnb Price Analyzer](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/) web tool \
-My Personal [GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md)
+## Project Links
+Full Written [Report](https://github.com/vicotriangle/victoria_data606/blob/main/docs/report.md) \
+[YouTube Video](https://www.youtube.com/watch?v=VHAO_WALIQc) of Presentation \
+[Airbnb Price Analyzer](https://victoriadata606-nbrfse7xgiopgqdvdap4jy.streamlit.app/) Web Tool \
+[PowerPoint](https://github.com/vicotriangle/victoria_data606/blob/main/docs/capstone.pptx) Presentation of Project \
+Project Python [Notebooks](https://github.com/vicotriangle/victoria_data606/tree/main/src) \
+My Personal [GitHub](https://github.com/vicotriangle/victoria_data606/blob/main/README.md) Account
 
 
 ## Table of Contents
